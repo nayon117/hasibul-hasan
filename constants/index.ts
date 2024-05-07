@@ -1,3 +1,26 @@
+import {
+  car,
+  contact,
+  css,
+  estate,
+  express,
+  git,
+  github,
+  html,
+  javascript,
+  linkedin,
+  mongodb,
+  
+  nodejs,
+  pricewise,
+  react,
+   
+  snapgram,
+  summiz,
+  tailwindcss,
+  threads,
+  
+} from "../public/icons";
 import { SidebarLink } from "@/types";
 
 export const themes = [
@@ -33,4 +56,56 @@ export const themes = [
       label: "Contact",
     },
      
+  ];
+
+
+  export const projects = [
+    {
+      iconUrl: pricewise,
+      theme: "btn-back-red",
+      name: "InnovatED",
+      description:
+        "InnovateED is an advanced e-learning platform designed to offer a seamless learning experience. With a blend of user-centric features and a rich interface, it caters to both students and teachers, providing a conducive environment for learning and teaching.",
+       link: "https://innavated.web.app/",
+    },
+    {
+      iconUrl: threads,
+      theme: "btn-back-green",
+      name: "Bistro Boss",
+      description:
+        'Developed a restaurant website using React, Tailwind CSS, Node.js, Express, and MongoDB. The platform provides a seamless experience for users to explore the restaurants menu, place orders, and discover special offers. Implemented secure payment features for online transactions.',
+      link: "https://bistro-boss-c.web.app/",
+    },
+    {
+      iconUrl: car,
+      theme: "btn-back-blue",
+      name: "Automotive Gearup",
+      description:
+        "Welcome to our automotive website, where you can explore a wide range of car brands, view car details, update car listings, and shop for your dream car.",
+      link: "https://automotive-gearup.web.app/",
+    },
+    {
+      iconUrl: snapgram,
+      theme: "btn-back-pink",
+      name: "FitZen",
+      description:
+        "FitZen is a dynamic Yoga and Fitness Retreats event management website, offering users the ability to discover, book, and review wellness retreats, all with a best user experience and secure authentication",
+      link: "https://bespoke-tulumba-33a298.netlify.app/",
+    },
+    {
+      iconUrl: estate,
+      theme: "btn-back-black",
+      name: "Food Unity",
+      description:
+        "Food Unity is a platform aimed at connecting individuals or organizations with surplus food to those in need. The project focuses on reducing food waste and addressing hunger by providing a user-friendly interface to share and request food items.",
+      link: "https://food-unity-client.web.app/",
+    },
+    {
+      iconUrl: summiz,
+      theme: "btn-back-yellow",
+      name: "Skillify",
+      description:
+        "Skillify is an advanced e-learning platform designed to offer a seamless learning experience. With a blend of user-centric features and a rich interface, it caters to both students and teachers, providing a conducive environment for learning and teaching.",
+      link: "https://skillify-client.web.app/",
+    },
   ];
