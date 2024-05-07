@@ -1,4 +1,5 @@
-import Timeline from "@/components/shared/Timeline";
+import dynamic from "next/dynamic";
+
 import { skills } from "@/constants";
 import Image from "next/image";
 import {
@@ -9,6 +10,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+
+const ComponentWithWindow = dynamic(
+  () => import("../../../components/shared/Timeline"),
+  {
+    ssr: false,
+  }
+);
 
 const About = () => {
   return (
@@ -48,7 +56,7 @@ const About = () => {
 
         {/* time line */}
         <div className="mt-12 flex">
-          <Timeline />
+          <ComponentWithWindow />
         </div>
       </div>
 
@@ -63,7 +71,9 @@ const About = () => {
                 width={250}
                 height={250}
               />
-              <CardTitle className="text-dark200_light800 pt-6">Complete Web Course</CardTitle>
+              <CardTitle className="text-dark200_light800 pt-6">
+                Complete Web Course
+              </CardTitle>
               <CardDescription className="text-dark300_light700">
                 Certified in completed web development course by programming
                 hero, showcasing proficiency in structuring content and styling
@@ -82,7 +92,9 @@ const About = () => {
           <Card>
             <CardHeader>
               <Image src="/js.jpg" alt="certificate" width={250} height={250} />
-              <CardTitle className="text-dark200_light800 pt-6">Javascript Course</CardTitle>
+              <CardTitle className="text-dark200_light800 pt-6">
+                Javascript Course
+              </CardTitle>
               <CardDescription className="text-dark300_light700">
                 Earned Scrimba certification in JavaScript, demonstrating
                 expertise in dynamic web development. Excited to apply advanced
