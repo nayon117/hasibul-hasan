@@ -1,8 +1,7 @@
 "use client";
 
 import { Chrono } from "react-chrono";
-const Timeline = ({ experiences }: any) => {
-  console.log(experiences);
+const Timeline = () => {
   return (
     <section className="">
       <Chrono
