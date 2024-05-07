@@ -1,6 +1,10 @@
+import akij from '../public/icons/akij.jpg'
+import cantonment from '../public/icons/cantonment.jpg'
+import bl from '../public/icons/bl.jpg'
+
 import {
   car,
-  contact,
+  // contact,
   css,
   estate,
   express,
@@ -8,7 +12,7 @@ import {
   github,
   html,
   javascript,
-  linkedin,
+  // linkedin,
   mongodb,
   
   nodejs,
@@ -27,6 +31,102 @@ export const themes = [
     { value: "light", label: "Light", icon: "/icons/sun.svg" },
     { value: "dark", label: "Dark", icon: "/icons/moon.svg" },
     { value: "system", label: "System", icon: "/icons/computer.svg" },
+  ];
+
+
+  export const skills = [
+    {
+      imageUrl: css,
+      name: "CSS",
+      type: "Frontend",
+    },
+    {
+      imageUrl: express,
+      name: "Express",
+      type: "Backend",
+    },
+    {
+      imageUrl: git,
+      name: "Git",
+      type: "Version Control",
+    },
+    {
+      imageUrl: github,
+      name: "GitHub",
+      type: "Version Control",
+    },
+    {
+      imageUrl: html,
+      name: "HTML",
+      type: "Frontend",
+    },
+    {
+      imageUrl: javascript,
+      name: "JavaScript",
+      type: "Frontend",
+    },
+    {
+      imageUrl: mongodb,
+      name: "MongoDB",
+      type: "Database",
+    },
+    {
+      imageUrl: nodejs,
+      name: "Node.js",
+      type: "Backend",
+    },
+    {
+      imageUrl: react,
+      name: "React",
+      type: "Frontend",
+    },
+    
+    {
+      imageUrl: tailwindcss,
+      name: "Tailwind CSS",
+      type: "Frontend",
+    },
+  ];
+  
+  export const experiences = [
+    {
+      title: "Secondary School Certificate",
+      company_name: "Akij Collegiate School",
+      icon: akij,
+      iconBg: "#accbe1",
+      date: "March 2016 - April 2018",
+      points: [
+        "Achieved exceptional results in academic coursework and examinations.",
+        "Demonstrated proficiency in various subjects, including mathematics, science, and languages.",
+        "Engaged in community service projects, contributing positively to society.",
+      ],
+    },
+    {
+      title: "Higher Secondary School Certificate",
+      company_name: "Cantonment College Jashore",
+      icon: cantonment,
+      iconBg: "#fbc3bc",
+      date: "Jun 2018 - Feb 2020",
+      points: [
+          "Achieved outstanding results in academic studies and examinations.",
+          "Participated actively in extracurricular activities, honing leadership and teamwork skills.",
+          "Demonstrated proficiency in a variety of subjects, including science, mathematics, and humanities.",
+          "Engaged in community service initiatives, contributing positively to the local community.",
+      ],
+    },
+    {
+      title: "Statistics(Honor's)",
+      company_name: "Khulna BL College",
+      icon: bl,
+      iconBg: "#b7e4c7",
+      date: "Jan 2021 - current",
+      points: [
+          "Studying advanced statistical methods and theories to analyze and interpret data effectively.",
+          "Collaborating with peers and faculty members on academic projects and assignments.",
+          "Applying statistical techniques to real-world scenarios and problem-solving exercises.",
+      ],
+    },
+    
   ];
 
   export const sidebarLinks: SidebarLink[] = [
