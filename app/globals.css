@@ -189,3 +189,10 @@ code {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.input {
+  @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 mt-2.5 font-normal shadow-light-100 dark:shadow-dark-100;
+}
+
+.textarea {
+  @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-orange-500 focus:border-orange-500 mt-2.5 font-normal shadow-light-100 dark:shadow-dark-100;
+}
