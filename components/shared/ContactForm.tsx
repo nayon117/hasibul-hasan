@@ -1,8 +1,8 @@
-"use client"
+"use client";
+import { ToastContainer, toast } from "react-toastify";
 
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Button } from "../ui/button";
-
 
 const ContactForm = () => {
   const initialFormData = {
@@ -13,15 +13,13 @@ const ContactForm = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [isLoading, setIsLoading] = useState(false);
 
-
   const handleChange = (
     event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
-  console.log(formData)
 
-  const handleSubmit = async(event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!formData.name || !formData.email) return;
     setIsLoading(true);
@@ -32,14 +30,12 @@ const ContactForm = () => {
       });
       setFormData(initialFormData);
       const { data } = await response.json();
-      // if (data) toast.success(`Email ${data.id} was successfully sent!`);
-      if(data) alert(`Email ${data.id} was successfully sent!`);
+      if (data) toast.success(`Email ${data.id} was successfully sent!`);
     } catch (error) {
-      // toast.error("Something went wrong", error);
-      console.log(error)
+      toast.error("Something went wrong");
+      console.log(error);
     }
     setIsLoading(false);
-    
   };
 
   return (
@@ -95,6 +91,9 @@ const ContactForm = () => {
             {isLoading ? "Sending..." : "Send Message"}
           </Button>
         </form>
+      </div>
+      <div>
+        <ToastContainer></ToastContainer>
       </div>
     </section>
   );
