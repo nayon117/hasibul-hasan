@@ -1,8 +1,6 @@
 
-
 import {
   car,
-  // contact,
   css,
   estate,
   express,
@@ -10,19 +8,23 @@ import {
   github,
   html,
   javascript,
-  // linkedin,
   mongodb,
-  
+  nextjs,
+
   nodejs,
   pricewise,
   react,
-   
+  typescript,
   snapgram,
   summiz,
   tailwindcss,
   threads,
+  mui,
   
 } from "../public/icons";
+
+import appwrite from '../public/icons/appwrite.png'
+import shadcn from '../public/icons/shadcn.png'
 import { SidebarLink } from "@/types";
 
 export const themes = [
@@ -34,14 +36,14 @@ export const themes = [
 
   export const skills = [
     {
-      imageUrl: css,
-      name: "CSS",
+      imageUrl: html,
+      name: "HTML",
       type: "Frontend",
     },
     {
-      imageUrl: express,
-      name: "Express",
-      type: "Backend",
+      imageUrl: css,
+      name: "CSS",
+      type: "Frontend",
     },
     {
       imageUrl: git,
@@ -54,8 +56,8 @@ export const themes = [
       type: "Version Control",
     },
     {
-      imageUrl: html,
-      name: "HTML",
+      imageUrl: tailwindcss,
+      name: "Tailwind CSS",
       type: "Frontend",
     },
     {
@@ -64,9 +66,9 @@ export const themes = [
       type: "Frontend",
     },
     {
-      imageUrl: mongodb,
-      name: "MongoDB",
-      type: "Database",
+      imageUrl: react,
+      name: "React",
+      type: "Frontend",
     },
     {
       imageUrl: nodejs,
@@ -74,16 +76,40 @@ export const themes = [
       type: "Backend",
     },
     {
-      imageUrl: react,
-      name: "React",
-      type: "Frontend",
+      imageUrl: express,
+      name: "Express",
+      type: "Backend",
     },
-    
     {
-      imageUrl: tailwindcss,
-      name: "Tailwind CSS",
+      imageUrl: mongodb,
+      name: "MongoDB",
+      type: "Database",
+    },
+    {
+      imageUrl: mui,
+      name: "MUI",
       type: "Frontend",
     },
+    {
+      imageUrl: nextjs,
+      name: "Next JS",
+      type: "Frontend",
+    },
+    {
+      imageUrl: typescript,
+      name: "Typescript",
+      type: "Frontend",
+    },
+    {
+      imageUrl: shadcn,
+      name: "Shadcn",
+      type: "UI",
+    },
+    {
+      imageUrl: appwrite,
+      name: "Appwrite",
+      type: "Backend",
+    },   
   ];
   
  
@@ -167,3 +193,28 @@ export const themes = [
       link: "https://skillify-client.web.app/",
     },
   ];
+
+
+export const blogsArray = [
+  {   
+      id:"1",
+      image: "https://i.ibb.co/qBBwQt8/images.jpg",
+      title: "Mongoose",
+      description: "Unveiling the Magic of Mongoose: A Beginner’s Guide to Database Management",
+      link: "https://medium.com/@hasibul.nayon1/unveiling-the-magic-of-mongoose-a-beginners-guide-to-database-management-8a958ec5822a"
+  },
+  {
+      id:"2",
+      image: "https://i.ibb.co/6WQDHwc/javascript-interview-questions.jpg",
+      title: "JS Interview Questions",
+      description: "JS Interview Questions and Answers for Beginners and Experienced Developers",
+      link: "https://www.linkedin.com/posts/hasibulhasannayon_js-question-activity-7190617170299555840-Giau?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+      id:"3",
+      image: "https://i.ibb.co/PFdLxMt/1714012124780.jpg",
+      title: "Next/Image",
+      description: "Next.js Performance Optimization Techniques for Better SEO and UX",
+      link: "https://www.linkedin.com/posts/hasibulhasannayon_topic-boosting-performance-with-nextjs-activity-7189087917942673411-HaRC?utm_source=share&utm_medium=member_desktop"
+  }
+];

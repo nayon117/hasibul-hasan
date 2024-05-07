@@ -57,7 +57,7 @@ const ContactForm = () => {
           onSubmit={handleSubmit}
           className="mt-8 flex w-full flex-col gap-7"
         >
-          <label htmlFor="" className="text-dark300_light700 font-semibold">
+          <label className="text-dark300_light700 font-semibold">
             Name
             <input
               type="text"
@@ -85,7 +85,7 @@ const ContactForm = () => {
             Your Message
             <textarea
               name="message"
-              rows={4}
+              rows={8}
               className="textarea no-focus border-none outline-none"
               required
               placeholder="Let me know how i can help you"
