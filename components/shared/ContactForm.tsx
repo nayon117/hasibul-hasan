@@ -1,55 +1,49 @@
-"use client";
-import emailjs from "@emailjs/browser";
+"use client"
+
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Button } from "../ui/button";
 
-const {
-  EMAILJS_SEVICE_ID: serviceId,
-  EMAILJS_TEMPLATE_ID: templateId,
-  EMAILJS_PUBLIC_KEY: publicKey,
-} = process.env;
- 
-console.log(serviceId, templateId, publicKey);
+
 const ContactForm = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const initialFormData = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const [formData, setFormData] = useState(initialFormData);
   const [isLoading, setIsLoading] = useState(false);
 
+
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [event.target.name]: event.target.value });
   };
+  console.log(formData)
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = async(event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    if (!formData.name || !formData.email) return;
     setIsLoading(true);
-
-    emailjs
-      .send(
-        serviceId!,
-        templateId!,
-        {
-          user_name: form.name,
-          to_name: "Hasibul Hasan",
-          user_email: form.email,
-          to_email: "hasibul.nayon1@gmail.com",
-          message: form.message,
-        },
-        publicKey
-      )
-      .then(() => {
-        setIsLoading(false);
-        setForm({ name: "", email: "", message: "" });
-      })
-      .catch((error) => {
-        setIsLoading(false);
-        console.log(error);
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        body: JSON.stringify({ ...formData }),
       });
+      setFormData(initialFormData);
+      const { data } = await response.json();
+      // if (data) toast.success(`Email ${data.id} was successfully sent!`);
+      if(data) alert(`Email ${data.id} was successfully sent!`);
+    } catch (error) {
+      // toast.error("Something went wrong", error);
+      console.log(error)
+    }
+    setIsLoading(false);
+    
   };
 
   return (
     <section className="relative flex flex-col md:flex-row">
-      {/* form */}
       <div className="flex min-w-[50%] flex-1 flex-col">
         <h1 className="h1-bold text-dark100_light900">Get In Touch</h1>
 
@@ -65,7 +59,7 @@ const ContactForm = () => {
               className="input no-focus border-none outline-none"
               required
               placeholder="Hasibul..."
-              value={form.name}
+              value={formData.name}
               onChange={handleChange}
             />
           </label>
@@ -77,7 +71,7 @@ const ContactForm = () => {
               className="input no-focus border-none outline-none"
               required
               placeholder="hasibul@gmail.com"
-              value={form.email}
+              value={formData.email}
               onChange={handleChange}
             />
           </label>
@@ -89,7 +83,7 @@ const ContactForm = () => {
               className="textarea no-focus border-none outline-none"
               required
               placeholder="Let me know how i can help you"
-              value={form.message}
+              value={formData.message}
               onChange={handleChange}
             />
           </label>
@@ -105,4 +99,5 @@ const ContactForm = () => {
     </section>
   );
 };
+
 export default ContactForm;
