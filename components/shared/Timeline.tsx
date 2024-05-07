@@ -1,64 +1,56 @@
-"use client"
-// import Image from 'next/image';
-// import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-// import 'react-vertical-timeline-component/style.min.css';
+"use client";
 
+import { Chrono } from "react-chrono";
 const Timeline = ({ experiences }: any) => {
-    console.log(experiences)
+  console.log(experiences);
   return (
-    <section className=''>
-       
-      <div>
-        {experiences.map((experience: any) => (
-          <div
-            key={experience.company_name}
-            // date={experience.date}
-            // icon={
-            //   <div className="flex size-full items-center justify-center">
-               
-            //     <Image
-            //       width={50}
-            //       height={50}
-            //       src={experience.icon.src} // Update to access the src property of the icon object
-            //       alt={experience.company_name}
-            //     />
-            //   </div>
-            // }
-            // iconStyle={{ background: experience.iconBg }}
-            // contentStyle={{
-            //   borderBottom: "8px ",
-            //   borderStyle: "solid",
-            //   borderBottomColor: experience.iconBg,
-            //   boxShadow: "none",
-            // }}
-          >
-            <div>
-              <h3 className="text-xl font-semibold text-black">
-                {experience.title}gsg
-              </h3>
-              <p
-                className="text-dark200_light800 font-medium"
-                style={{ margin: 0 }}
-              >
-                {experience.company_name}
-              </p>
-            </div>
-
-            <ul className="my-5 ml-5 list-disc space-y-2">
-              {experience.points.map((point: any, index: number) => (
-                <li
-                  key={`experience-point-${index}`}
-                  className="pl-1 text-sm font-normal text-black"
-                >
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+    <section className="">
+      <Chrono
+        theme={{
+          primary: "orange",
+          secondary: "inherit",
+          titleColor: "black",
+        }}
+        classNames={{
+          card: "",
+          cardSubTitle: "h2-bold",
+          cardText: "",
+          cardTitle: "h1-bold ",
+          controls: "my-controls",
+          title: "h1-bold text-dark100_light900",
+        }}
+        items={[
+          {
+            title: "2016-2018",
+            cardTitle: "Secondary School Certificate",
+            url: "http://google.com",
+            cardSubtitle: "Akij Collegiate School",
+            cardDetailedText: `Achieved exceptional results in academic coursework and examinations.",
+          "Demonstrated proficiency in various subjects, including mathematics, science, and languages.",
+          "Engaged in community service projects, contributing positively to society`,
+          },
+          {
+            title: "2018-2020",
+            cardTitle: "Higher Secondary School Certificate",
+            cardSubtitle: `Cantonment College Jashore`,
+            cardDetailedText: `Achieved outstanding results in academic studies and examinations.",
+          "Participated actively in extracurricular activities, honing leadership and teamwork skills.",
+          "Demonstrated proficiency in a variety of subjects, including science, mathematics, and humanities.",
+          "Engaged in community service initiatives, contributing positively to the local community.`,
+          },
+          {
+            title: "2021-current",
+            cardTitle: "Statistics",
+            cardSubtitle: `Khulna BL College`,
+            cardDetailedText: `Studying advanced statistical methods and theories to analyze and interpret data effectively.",
+          "Collaborating with peers and faculty members on academic projects and assignments.",
+          "Applying statistical techniques to real-world scenarios and problem-solving exercises.`,
+          },
+        ]}
+        mode="VERTICAL_ALTERNATING"
+      />
     </section>
-  )
-}
+  );
+};
 
 export default Timeline;
