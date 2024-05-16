@@ -52,7 +52,7 @@ const ContactForm = () => {
             <input
               type="text"
               name="name"
-              className="input no-focus border-none outline-none"
+              className="input no-focus background-light700_dark300 border-none outline-none"
               required
               placeholder="Hasibul..."
               value={formData.name}
@@ -64,7 +64,7 @@ const ContactForm = () => {
             <input
               type="email"
               name="email"
-              className="input no-focus border-none outline-none"
+              className="input no-focus background-light700_dark300 border-none outline-none"
               required
               placeholder="hasibul@gmail.com"
               value={formData.email}
@@ -76,7 +76,7 @@ const ContactForm = () => {
             <textarea
               name="message"
               rows={8}
-              className="textarea no-focus border-none outline-none"
+              className="textarea no-focus background-light700_dark300 border-none outline-none"
               required
               placeholder="Let me know how i can help you"
               value={formData.message}
