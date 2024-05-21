@@ -31,7 +31,7 @@ const HomePage = () => {
           </p>
 
           <p className="my-5">
-            🔥 Proficient in Node.js, Express.js, and MongoDB, I excel in
+            🔥 Proficient in NEXTJS, Shadcn,clerk, Express.js, MongoDB, Mongoose, I excel in
             backend development, ensuring efficient server-side operations and
             robust database management.
           </p>

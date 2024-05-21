@@ -155,10 +155,10 @@ export const themes = [
     {
       iconUrl: threads,
       theme: "btn-back-green",
-      name: "Bistro Boss",
+      name: "DevForge",
       description:
-        'Developed a restaurant website using React, Tailwind CSS, Node.js, Express, and MongoDB. The platform provides a seamless experience for users to explore the restaurants menu, place orders, and discover special offers. Implemented secure payment features for online transactions.',
-      link: "https://bistro-boss-c.web.app/",
+        'DevForge is an open-source, collaborative platform designed to empower developers of all levels by fostering knowledge sharing, problem-solving, and community engagement. Inspired by Stack Overflows success, DevForge aims to provide a comprehensive suite of features to streamline the developer experience',
+      link: "https://devforge117.vercel.app/",
     },
     {
       iconUrl: car,
