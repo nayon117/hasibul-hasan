@@ -150,7 +150,9 @@ export const themes = [
       name: "InnovatED",
       description:
         "InnovateED is an advanced e-learning platform designed to offer a seamless learning experience. With a blend of user-centric features and a rich interface, it caters to both students and teachers, providing a conducive environment for learning and teaching.",
-       link: "https://innavated.web.app/",
+       livelink: "https://innavated.web.app/",
+       client:"https://github.com/ruksana03/EdTech-Client",
+       server:"https://github.com/ruksana03/EdTech-Server"
     },
     {
       iconUrl: threads,
@@ -158,7 +160,8 @@ export const themes = [
       name: "DevForge",
       description:
         'DevForge is an open-source, collaborative platform designed to empower developers of all levels by fostering knowledge sharing, problem-solving, and community engagement. Inspired by Stack Overflows success, DevForge aims to provide a comprehensive suite of features to streamline the developer experience',
-      link: "https://devforge117.vercel.app/",
+      livelink: "https://devforge117.vercel.app/",
+      client:"https://github.com/nayon117/devforge"
     },
     {
       iconUrl: car,
@@ -166,7 +169,9 @@ export const themes = [
       name: "Automotive Gearup",
       description:
         "Welcome to our automotive website, where you can explore a wide range of car brands, view car details, update car listings, and shop for your dream car.",
-      link: "https://automotive-gearup.web.app/",
+      livelink: "https://automotive-gearup.web.app/",
+      client:"https://github.com/nayon117/automotive-gearup-client",
+      server:"https://github.com/nayon117/automotive-gearup-server"
     },
     {
       iconUrl: snapgram,
@@ -174,7 +179,8 @@ export const themes = [
       name: "FitZen",
       description:
         "FitZen is a dynamic Yoga and Fitness Retreats event management website, offering users the ability to discover, book, and review wellness retreats, all with a best user experience and secure authentication",
-      link: "https://bespoke-tulumba-33a298.netlify.app/",
+      livelink: "https://bespoke-tulumba-33a298.netlify.app/",
+      client:"https://github.com/nayon117/react-fitzen",
     },
     {
       iconUrl: estate,
@@ -182,15 +188,29 @@ export const themes = [
       name: "Food Unity",
       description:
         "Food Unity is a platform aimed at connecting individuals or organizations with surplus food to those in need. The project focuses on reducing food waste and addressing hunger by providing a user-friendly interface to share and request food items.",
-      link: "https://food-unity-client.web.app/",
+      livelink: "https://food-unity-client.web.app/",
+      client:"https://github.com/nayon117/food-unity-client",
+      server:"https://github.com/nayon117/food-unity-server"
     },
     {
       iconUrl: summiz,
       theme: "btn-back-yellow",
-      name: "Skillify",
+      name: "DressU",
       description:
-        "Skillify is an advanced e-learning platform designed to offer a seamless learning experience. With a blend of user-centric features and a rich interface, it caters to both students and teachers, providing a conducive environment for learning and teaching.",
-      link: "https://skillify-client.web.app/",
+        "DressU is an advanced e-commerce platform tailored for fashion enthusiasts. It provides a seamless shopping experience with a blend of user-centric features and a rich interface, catering to both fashion buyers and admins.",
+      livelink: "https://dressu-inc.web.app/",
+      client:"https://github.com/nayon117/dressu-client",
+      server:"https://github.com/nayon117/dressu-server"
+    },
+    {
+      iconUrl: pricewise,
+      theme: "btn-back-red",
+      name: "EliteX",
+      description:
+        "EliteX is an tailwind Css UI kit for developers and designers to create a responsive and user-friendly website. It is a collection of reusable components, styles, and utilities, designed to help you build professional-looking websites in no time.",
+       livelink:"https://elitex-ui.vercel.app/",
+       client:"https://github.com/nayon117/EliteX-UI"
+
     },
   ];
 

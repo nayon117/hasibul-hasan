@@ -41,9 +41,25 @@ const Project = () => {
               <p className="text-dark400_light800 mt-2">
                 {project.description}
               </p>
-              <div className=" mt-5 flex items-center gap-2">
+              <div className=" mt-5 flex items-center gap-4">
                 <Link
-                  href={project.link}
+                  href={project?.client}
+                  target="_blank"
+                  className="font-semibold text-blue-600"
+                >
+                  client
+                </Link>
+                {project.server && (
+                  <Link
+                    href={project.server}
+                    target="_blank"
+                    className="font-semibold text-blue-600"
+                  >
+                    server
+                  </Link>
+                )}
+                <Link
+                  href={project?.livelink}
                   target="_blank"
                   className="font-semibold text-blue-600"
                 >
