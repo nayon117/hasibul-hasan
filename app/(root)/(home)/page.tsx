@@ -60,13 +60,13 @@ const HomePage = () => {
                 href="https://www.linkedin.com/in/hasibulhasannayon/"
                 target="_blank"
               >
-                <FaLinkedin className="text-3xl text-blue-700" />
+                <FaLinkedin className="text-3xl text-blue-600" />
               </Link>
               <Link
                 href="https://www.facebook.com/profile.php?id=100063569796707"
                 target="_blank"
               >
-                <FaFacebook className="text-3xl text-blue-700" />
+                <FaFacebook className="text-3xl text-blue-600" />
               </Link>
             </div>
           </div>
