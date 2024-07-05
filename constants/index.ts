@@ -218,7 +218,7 @@ export const themes = [
       name: "GadgetBD",
       description:
         'GadgetBD is a modern e-commerce platform built using Next.js, TypeScript, and other cutting-edge technologies. The store offers a wide range of electronic gadgets, with features like product search, pagination, cart management, and a smooth checkout process.',
-      livelink: "https://devforge117.vercel.app/",
+      livelink: "https://gadgetbd.vercel.app/",
       client:"https://github.com/nayon117/gadgetbd"
     },
   ];
