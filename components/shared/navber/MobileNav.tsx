@@ -58,9 +58,9 @@ const MobileNav = () => {
         side="left"
         className="background-light900_dark200 border-none"
       >
-        <Link className="flex items-center gap-1" href="/">
-          <p className="h2-bold text-dark100_light900 font-spaceGrotesk">
-            Hasi<span className="text-primary-500">bul</span>
+        <Link className="flex size-10 items-center justify-center rounded-lg bg-white font-bold shadow-md" href="/">
+          <p className="h2-bold blue-gradient_text font-spaceGrotesk ">
+            HN
           </p>
         </Link>
         <div>

@@ -31,9 +31,9 @@ const HomePage = () => {
           </p>
 
           <p className="my-5">
-            🔥 Proficient in Next.js, Shadcn, clerk, Express.js, MongoDB, Mongoose, I excel in
-            backend development, ensuring efficient server-side operations and
-            robust database management.
+            🔥 Proficient in Next.js, Shadcn, clerk, Express.js, MongoDB,
+            Mongoose, I excel in backend development, ensuring efficient
+            server-side operations and robust database management.
           </p>
 
           <p>
@@ -60,13 +60,13 @@ const HomePage = () => {
                 href="https://www.linkedin.com/in/hasibulhasannayon/"
                 target="_blank"
               >
-                <FaLinkedin className="text-3xl text-blue-600" />
+                <FaLinkedin className="text-3xl text-blue-500" />
               </Link>
               <Link
                 href="https://www.facebook.com/profile.php?id=100063569796707"
                 target="_blank"
               >
-                <FaFacebook className="text-3xl text-blue-600" />
+                <FaFacebook className="text-3xl text-blue-500" />
               </Link>
             </div>
           </div>
