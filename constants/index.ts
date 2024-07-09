@@ -245,5 +245,12 @@ export const blogsArray = [
       title: "Next/Image",
       description: "Next.js Performance Optimization Techniques for Better SEO and UX",
       link: "https://www.linkedin.com/posts/hasibulhasannayon_topic-boosting-performance-with-nextjs-activity-7189087917942673411-HaRC?utm_source=share&utm_medium=member_desktop"
+  },
+  {
+      id:"4",
+      image: "https://i.ibb.co/CwGLWV0/closure.jpg",
+      title: "JS/Closure",
+      description: "Understanding Closures in JavaScript​: Simplified! 🧠",
+      link: "https://www.linkedin.com/posts/hasibulhasannayon_javascript-closure-webdev-activity-7215705434341408768-3Jy6?utm_source=share&utm_medium=member_desktop"
   }
 ];
