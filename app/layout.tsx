@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 // eslint-disable-next-line camelcase
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import "../styles/theme.css";
-import React from "react";
 
-import { ThemeProvider } from "@/context/ThemeProvider";
+import React from "react";
+import { ThemeProvider } from "@/components/shared/ThemeProvider";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +35,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${spaceGrotesk.variable} `}>
-        <ThemeProvider>{children}</ThemeProvider>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
       </body>
     </html>
   );

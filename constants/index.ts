@@ -1,8 +1,6 @@
 
 import {
-  car,
   css,
-  estate,
   express,
   git,
   github,
@@ -10,31 +8,28 @@ import {
   javascript,
   mongodb,
   nextjs,
-
   nodejs,
-  pricewise,
   react,
   typescript,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
   mui,
   
 } from "../public/icons";
 
 import appwrite from '../public/icons/appwrite.png'
 import shadcn from '../public/icons/shadcn.png'
-import { SidebarLink } from "@/types";
 
-export const themes = [
-    { value: "light", label: "Light", icon: "/icons/sun.svg" },
-    { value: "dark", label: "Dark", icon: "/icons/moon.svg" },
-    { value: "system", label: "System", icon: "/icons/computer.svg" },
+
+  export const navItems = [
+    { name: "Skills", link: "#skills" },
+    { name: "Projects", link: "#projects" },
+    { name: "About", link: "#about" },
+    { name: "Blog", link: "#blog" },
+    { name: "Contact", link: "#contact" },
   ];
 
 
-  export const skills = [
+  export const skillsArray = [
     {
       imageUrl: html,
       name: "HTML",
@@ -113,113 +108,93 @@ export const themes = [
   ];
   
  
-  export const sidebarLinks: SidebarLink[] = [
-    {
-      imgURL: "/icons/home.svg",
-      route: "/",
-      label: "Home",
-    },
-    {
-      imgURL: "/icons/users.svg",
-      route: "/about",
-      label: "About",
-    },
-    {
-      imgURL: "/icons/star.svg",
-      route: "/project",
-      label: "Projects",
-    },
-    {
-      imgURL: "/icons/suitcase.svg",
-      route: "/blog",
-      label: "Blogs",
-    },
-    {
-      imgURL: "/icons/user.svg",
-      route: "/contact",
-      label: "Contact",
-    },
-     
-  ];
 
 
   export const projects = [
     {
-      iconUrl: pricewise,
-      theme: "btn-back-red",
+      id:6,
       name: "InnovatED",
+      img: "/innovatED.jpg",
       description:
         "InnovateED is an advanced e-learning platform designed to offer a seamless learning experience. With a blend of user-centric features and a rich interface, it caters to both students and teachers, providing a conducive environment for learning and teaching.",
        livelink: "https://innavated.web.app/",
        client:"https://github.com/ruksana03/EdTech-Client",
-       server:"https://github.com/ruksana03/EdTech-Server"
+       server:"https://github.com/ruksana03/EdTech-Server",
+       iconLists: ["react.svg","tail.svg","redux.svg","express.svg","mongodb.svg"],
     },
     {
-      iconUrl: threads,
-      theme: "btn-back-green",
+      id:7,
       name: "DevForge",
+      img: "/devforge.jpg",
       description:
         'DevForge is an open-source, collaborative platform designed to empower developers of all levels by fostering knowledge sharing, problem-solving, and community engagement. Inspired by Stack Overflows success, DevForge aims to provide a comprehensive suite of features to streamline the developer experience',
       livelink: "https://devforge117.vercel.app/",
-      client:"https://github.com/nayon117/devforge"
+      client:"https://github.com/nayon117/devforge",
+      iconLists: ["next.svg","tail.svg","ts.svg","mongodb.svg","c.svg"],
     },
     {
-      iconUrl: car,
-      theme: "btn-back-blue",
+      id:8,
       name: "Automotive Gearup",
+      img: "/gearup.jpg",
       description:
         "Welcome to our automotive website, where you can explore a wide range of car brands, view car details, update car listings, and shop for your dream car.",
       livelink: "https://automotive-gearup.web.app/",
       client:"https://github.com/nayon117/automotive-gearup-client",
-      server:"https://github.com/nayon117/automotive-gearup-server"
+      server:"https://github.com/nayon117/automotive-gearup-server",
+      iconLists: ["react.svg","tail.svg","express.svg","mongodb.svg"],
     },
     {
-      iconUrl: snapgram,
-      theme: "btn-back-pink",
+      id:9,
       name: "FitZen",
+      img: "/fitzen.jpg",
       description:
         "FitZen is a dynamic Yoga and Fitness Retreats event management website, offering users the ability to discover, book, and review wellness retreats, all with a best user experience and secure authentication",
       livelink: "https://bespoke-tulumba-33a298.netlify.app/",
       client:"https://github.com/nayon117/react-fitzen",
+      iconLists: ["react.svg","tail.svg"],
     },
     {
-      iconUrl: estate,
-      theme: "btn-back-black",
+      id:10,
       name: "Food Unity",
+      img: "/food.jpg",
       description:
         "Food Unity is a platform aimed at connecting individuals or organizations with surplus food to those in need. The project focuses on reducing food waste and addressing hunger by providing a user-friendly interface to share and request food items.",
       livelink: "https://food-unity-client.web.app/",
       client:"https://github.com/nayon117/food-unity-client",
-      server:"https://github.com/nayon117/food-unity-server"
+      server:"https://github.com/nayon117/food-unity-server",
+      iconLists: ["react.svg","tail.svg","express.svg","mongodb.svg"],
     },
     {
-      iconUrl: summiz,
-      theme: "btn-back-yellow",
+      id:11,
       name: "DressU",
+      img: "/dress.jpg",
       description:
         "DressU is an advanced e-commerce platform tailored for fashion enthusiasts. It provides a seamless shopping experience with a blend of user-centric features and a rich interface, catering to both fashion buyers and admins.",
       livelink: "https://dressu-inc.web.app/",
       client:"https://github.com/nayon117/dressu-client",
-      server:"https://github.com/nayon117/dressu-server"
+      server:"https://github.com/nayon117/dressu-server",
+      iconLists: ["react.svg","tail.svg","express.svg","mongodb.svg"],
     },
     {
-      iconUrl: pricewise,
-      theme: "btn-back-red",
+      id:12,
       name: "EliteX",
+      img: "/elite.jpg",
       description:
         "EliteX is an tailwind Css UI kit for developers and designers to create a responsive and user-friendly website. It is a collection of reusable components, styles, and utilities, designed to help you build professional-looking websites in no time.",
        livelink:"https://elitex-ui.vercel.app/",
-       client:"https://github.com/nayon117/EliteX-UI"
+       client:"https://github.com/nayon117/EliteX-UI",
+       iconLists: ["react.svg","tail.svg"],
 
     },
     {
-      iconUrl: threads,
-      theme: "btn-back-green",
+      id:13,
       name: "GadgetBD",
+      img: "/gadget.jpg",
       description:
         'GadgetBD is a modern e-commerce platform built using Next.js, TypeScript, and other cutting-edge technologies. The store offers a wide range of electronic gadgets, with features like product search, pagination, cart management, and a smooth checkout process.',
       livelink: "https://gadgetbd.vercel.app/",
-      client:"https://github.com/nayon117/gadgetbd"
+      client:"https://github.com/nayon117/gadgetbd",
+      iconLists: ["next.svg","tail.svg","ts.svg","mongodb.svg","c.svg"],
     },
   ];
 
@@ -253,4 +228,32 @@ export const blogsArray = [
       description: "Understanding Closures in JavaScript​: Simplified! 🧠",
       link: "https://www.linkedin.com/posts/hasibulhasannayon_javascript-closure-webdev-activity-7215705434341408768-3Jy6?utm_source=share&utm_medium=member_desktop"
   }
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    link:'https://github.com/nayon117'
+  },
+  {
+    id: 2,
+    img: "/link.svg",
+    link:'https://www.linkedin.com/in/hasibulhasannayon/'
+  },
+];
+
+export const words = [
+  {
+    text: "Hi, I'm Hasibul Hasan Nayon",
+    className: "dark:text-blue-500",
+  },
+  {
+    text: "A Frontend Developer",
+    className: "dark:text-purple",
+  },
+  {
+    text: "A React & Next.js Developer",
+    className: "dark:text-purple",
+  },
 ];
