@@ -34,7 +34,7 @@ const Projects = () => {
                 />
               </div>
 
-              <h1 className="line-clamp-1 text-base font-bold md:text-xl lg:text-2xl">
+              <h1 className="line-clamp-1 text-base font-bold text-white-100 md:text-xl lg:text-2xl">
                 {item.name}
               </h1>
 

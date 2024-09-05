@@ -24,9 +24,9 @@ export function Blog() {
             className="flex items-center justify-center  antialiased"
           >
             <GlowingStarsBackgroundCard>
-              <GlowingStarsTitle>{blog.title}</GlowingStarsTitle>
+              <GlowingStarsTitle className="text-lg md:text-xl">{blog.title}</GlowingStarsTitle>
               <div className="flex items-end justify-between">
-                <GlowingStarsDescription>
+                <GlowingStarsDescription className="text-sm md:text-base">
                   {blog.description}
                 </GlowingStarsDescription>
                 <div className="flex size-8 items-center justify-center rounded-full bg-[hsla(0,0%,100%,.1)]">

@@ -113,7 +113,7 @@ const Card = ({
         </h2>
         <div className="mt-4 ">
           <a href={link} download>
-            <FaDownload className="mx-auto" />
+            <FaDownload className="mx-auto text-white-100" />
           </a>
         </div>
       </div>

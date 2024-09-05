@@ -56,16 +56,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500 md:hidden">
                 {item.title}
               </h3>
-              <div className="flex items-center">
+              <div className="flex items-center text-white-100">
                 <span className="mr-2 text-2xl">🎓</span>
                 <h2>{item.cardTitle}</h2>
               </div>
-              <div className="ml-2">
+              <div className="ml-2 text-white">
                 <div className="flex items-center">
                   <span className="mr-2 text-xl">🏫</span>
                   <h3>{item.cardSubtitle}</h3>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start text-white">
                   <span className="mr-2 text-lg">📝</span>
                   <p>{item.cardDetailedText}</p>
                 </div>
