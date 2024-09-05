@@ -139,13 +139,13 @@ const Glow = ({ delay }: { delay: number }) => {
   return (
     <motion.div
       initial={{
-        opacity: .6,
+        opacity: .7,
       }}
       animate={{
         opacity: 1,
       }}
       transition={{
-        duration: 2,
+        duration: 1.5,
         ease: "easeInOut",
         delay,
       }}

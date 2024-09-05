@@ -33,7 +33,7 @@ const Hero = () => {
       >
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center  [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
       </div>
-    
+
       <Vortex
         className="flex size-full flex-col items-center justify-center px-2 py-4 md:px-10"
         backgroundColor="transparent"
@@ -41,11 +41,10 @@ const Hero = () => {
 
       {/* Text and image */}
       <div className="relative z-10 mt-20 flex justify-center">
-
         <div className="flex flex-col-reverse items-center justify-between  gap-6 md:flex-row">
           <div className=" flex-1 text-left">
             <TypewriterEffectSmooth words={words} />
-            <p className="mb-4  text-sm md:text-lg md:tracking-widest lg:text-2xl">
+            <p className="mb-4  text-sm text-white md:text-lg md:tracking-widest lg:text-2xl">
               {" "}
               Passionate about creating impactful and innovative web solutions.
             </p>
@@ -68,9 +67,7 @@ const Hero = () => {
             />
           </div>
         </div>
-
       </div>
-      
     </div>
   );
 };

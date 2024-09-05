@@ -53,7 +53,7 @@ const ContactForm = () => {
     <section id="contact" className="py-12">
       <div className="flex flex-col-reverse items-center justify-between gap-16 md:flex-row">
         <div className="flex-1   flex-col">
-          <h1 className="heading">Get In Touch</h1>
+          <h1 className="heading text-white">Get In Touch</h1>
           <p className="my-5 text-center text-white-200 md:mt-10">
             Thank you for visiting! Whether you have a question, comment, or
             simply want to say hello, I encourage you to reach out.{" "}
@@ -110,7 +110,7 @@ const ContactForm = () => {
         </div>
 
         <div className="flex-1">
-          <h1 className="text-xl font-semibold md:text-2xl lg:max-w-[45vw] lg:text-4xl">
+          <h1 className="text-xl font-semibold text-white md:text-2xl lg:max-w-[45vw] lg:text-4xl">
             Ready to take <span className="text-purple">your</span> digital
             presence to the next level?
           </h1>
