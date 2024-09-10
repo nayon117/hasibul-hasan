@@ -1,5 +1,4 @@
 import About from "@/components/shared/About";
-import BlogShowcase from "@/components/shared/BlogShowCase";
 import Certificate from "@/components/shared/Certificate";
 import ContactForm from "@/components/shared/ContactForm";
 import { Education } from "@/components/shared/Education";
@@ -8,6 +7,12 @@ import Hero from "@/components/shared/Hero";
 import Projects from "@/components/shared/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/constants";
+import dynamic from "next/dynamic";
+
+
+const BlogShowcase = dynamic(() => import('@/components/shared/BlogShowCase'), { 
+  ssr: false 
+});
 
 const HomePage = () => {
   return (
