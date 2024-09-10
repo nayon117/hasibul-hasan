@@ -23,7 +23,7 @@ export function Education() {
     },
   ];
   return (
-    <div id="about" className="w-full">
+    <div id="about" className="w-full px-5 sm:px-10">
       <Timeline data={data} />
     </div>
   );

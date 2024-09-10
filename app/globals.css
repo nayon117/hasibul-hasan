@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
+
+
 .block-container {
   position: relative;
   transition: 250ms;
@@ -118,6 +124,42 @@
   }
   .no-focus {
     @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-transparent
+    }
+    .text-gray_gradient {
+      @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+    }
+    .btn {
+      @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    }
+  
+    .btn-ping {
+      @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-300 opacity-75;
+    }
+  
+    .btn-ping_dot {
+      @apply relative inline-flex rounded-full h-3 w-3 bg-purple-400;
+    }
+
+
+    .grid-container {
+      @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5 ;
+    }
+    .tech-images-container {
+      @apply flex flex-wrap gap-4 h-auto; /* Ensures the images are displayed side by side with proper wrapping */
+    }
+    
+    
+  
+    .grid-headtext {
+      @apply text-xl font-semibold mb-2 text-white ;
+    }
+  
+    .grid-subtext {
+      @apply text-[#afb0b6] text-base ;
+    }
+  
+    .copy-container {
+      @apply cursor-pointer flex justify-center items-center gap-2;
     }
 
     .input {

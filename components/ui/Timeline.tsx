@@ -1,7 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import { TextRevealCard } from "./TextReveal";
+import { SparklesPreview } from "../shared/SparkelComp";
 
 interface TimelineEntry {
   title: string;
@@ -32,10 +32,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div className="w-full   " ref={containerRef}>
-       <TextRevealCard
-            text="Academic Background"
-            revealText="Foundation for Professional Excellence"
-          ></TextRevealCard>
+      <SparklesPreview title="Academic Background" />
 
       <div ref={ref} className="relative mx-auto max-w-7xl pb-20">
         {data.map((item, index) => (
@@ -47,25 +44,25 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <div className="absolute left-3 flex size-10 items-center justify-center rounded-full bg-white dark:bg-black md:left-3">
                 <div className="size-4 rounded-full border border-neutral-300 bg-neutral-200 p-2 dark:border-neutral-700 dark:bg-neutral-800" />
               </div>
-              <h3 className="hidden text-xl font-bold text-neutral-500 dark:text-neutral-500 md:block md:pl-20 md:text-5xl ">
+              <h3 className="text-gray_gradient hidden text-xl font-bold dark:text-neutral-500 md:block md:pl-20 md:text-5xl ">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500 md:hidden">
+              <h3 className="text-gray_gradient mb-4 block text-left text-2xl font-bold  md:hidden">
                 {item.title}
               </h3>
-              <div className="flex items-center text-white-100">
+              <div className="text-gray_gradient flex items-center">
                 <span className="mr-2 text-2xl">🎓</span>
                 <h2>{item.cardTitle}</h2>
               </div>
               <div className="ml-2 text-white">
-                <div className="flex items-center">
+                <div className="flex items-center text-neutral-400">
                   <span className="mr-2 text-xl">🏫</span>
                   <h3>{item.cardSubtitle}</h3>
                 </div>
-                <div className="flex items-start text-white">
+                <div className="flex items-start text-neutral-400">
                   <span className="mr-2 text-lg">📝</span>
                   <p>{item.cardDetailedText}</p>
                 </div>
@@ -84,7 +81,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="from-purple-500 absolute inset-x-0  top-0 w-[2px] rounded-full bg-gradient-to-t from-0% via-blue-500 via-10% to-transparent"
+            className="absolute inset-x-0 top-0  w-[2px] rounded-full bg-gradient-to-t from-purple-500 from-0% via-blue-500 via-10% to-transparent"
           />
         </div>
       </div>

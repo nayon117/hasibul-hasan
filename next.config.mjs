@@ -13,7 +13,8 @@ const nextConfig = {
 },
 eslint:{
     ignoreDuringBuilds: true,
-}
+},
+transpilePackages: ['swiper'],
 
 };
 

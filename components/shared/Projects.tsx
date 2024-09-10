@@ -3,16 +3,13 @@
 import { projects } from "@/constants";
 import { PinContainer } from "../ui/Pin";
 import Link from "next/link";
-import MagicButton from "./MagicButton";
-import { TextRevealCard } from "../ui/TextReveal";
+import Button from "../ui/Button";
+import { SparklesPreview } from "./SparkelComp";
 
 const Projects = () => {
   return (
     <div id="projects" className="py-20">
-      <TextRevealCard
-        text="Signature Projects"
-        revealText="A Showcase of My Recent Work"
-      ></TextRevealCard>
+      <SparklesPreview title="Signature Projects" />
       <div className="flex flex-wrap items-center justify-center gap-16 p-4 ">
         {projects.map((item) => (
           <div
@@ -34,7 +31,7 @@ const Projects = () => {
                 />
               </div>
 
-              <h1 className="line-clamp-1 text-base font-bold text-white-100 md:text-xl lg:text-2xl">
+              <h1 className="line-clamp-1 text-base font-bold text-gray_gradient md:text-xl lg:text-2xl">
                 {item.name}
               </h1>
 
@@ -66,15 +63,15 @@ const Projects = () => {
 
               <div className=" mt-5 flex items-center gap-4">
                 <Link href={item?.client} target="_blank">
-                  <MagicButton title="client" otherClasses="px-7" />
+                  <Button name="client" containerClass="px-7" />
                 </Link>
                 {item.server && (
                   <Link href={item.server} target="_blank">
-                    <MagicButton title="server" otherClasses="px-7 " />
+                    <Button name="server" containerClass="px-7 " />
                   </Link>
                 )}
                 <Link href={item?.livelink} target="_blank">
-                  <MagicButton title="Live" otherClasses="px-7 " />
+                  <Button name="Live" isBeam containerClass="px-7 " />
                 </Link>
               </div>
             </PinContainer>
