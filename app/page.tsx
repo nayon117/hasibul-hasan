@@ -1,4 +1,4 @@
-import About from "@/components/shared/About";
+// import About from "@/components/shared/About";
 import Certificate from "@/components/shared/Certificate";
 import ContactForm from "@/components/shared/ContactForm";
 import { Education } from "@/components/shared/Education";
@@ -13,6 +13,9 @@ const BlogShowcase = dynamic(() => import('@/components/shared/BlogShowCase'), {
   ssr: false 
 });
 const Hero = dynamic(() => import('@/components/shared/Hero'), { 
+  ssr: false 
+});
+const About = dynamic(() => import('@/components/shared/About'), { 
   ssr: false 
 });
 
