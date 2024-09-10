@@ -3,7 +3,6 @@ import Certificate from "@/components/shared/Certificate";
 import ContactForm from "@/components/shared/ContactForm";
 import { Education } from "@/components/shared/Education";
 import Footer from "@/components/shared/Footer";
-import Hero from "@/components/shared/Hero";
 import Projects from "@/components/shared/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/constants";
@@ -11,6 +10,9 @@ import dynamic from "next/dynamic";
 
 
 const BlogShowcase = dynamic(() => import('@/components/shared/BlogShowCase'), { 
+  ssr: false 
+});
+const Hero = dynamic(() => import('@/components/shared/Hero'), { 
   ssr: false 
 });
 
