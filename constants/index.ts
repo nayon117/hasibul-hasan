@@ -172,19 +172,19 @@ export const projects = [
 export const blogsArray = [
   {
     id: "1",
-    image: "https://i.ibb.co/qBBwQt8/images.jpg",
-    title: "Mongoose",
-    description:
-      "Unveiling the Magic of Mongoose: A Beginner’s Guide to Database Management",
-    link: "https://medium.com/@hasibul.nayon1/unveiling-the-magic-of-mongoose-a-beginners-guide-to-database-management-8a958ec5822a",
-  },
-  {
-    id: "2",
     image: "https://i.ibb.co/6WQDHwc/javascript-interview-questions.jpg",
     title: "JS Interview Questions",
     description:
       "JS Interview Questions and Answers for Beginners and Experienced Developers",
     link: "https://www.linkedin.com/posts/hasibulhasannayon_js-question-activity-7190617170299555840-Giau?utm_source=share&utm_medium=member_desktop",
+  },
+  {
+    id: "2",
+    image: "https://i.ibb.co/qBBwQt8/images.jpg",
+    title: "Mongoose",
+    description:
+      "Unveiling the Magic of Mongoose: A Beginner’s Guide to Database Management",
+    link: "https://medium.com/@hasibul.nayon1/unveiling-the-magic-of-mongoose-a-beginners-guide-to-database-management-8a958ec5822a",
   },
   {
     id: "3",

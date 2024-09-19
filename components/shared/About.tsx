@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Globe from "react-globe.gl";
 import Button from "../ui/Button";
 import { skillsArray } from "@/constants";
 import Image from "next/image";
@@ -70,25 +69,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
             <div className="flex h-fit w-full items-center justify-center rounded-3xl sm:h-[326px]">
-              <Globe
-                height={326}
-                width={326}
-                backgroundColor="rgba(0, 0, 0, 0)"
-                backgroundImageOpacity={0.5}
-                showAtmosphere
-                showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                labelsData={[
-                  {
-                    lat: 40,
-                    lng: -100,
-                    text: "Khulna, Bangladesh",
-                    color: "white",
-                    size: 15,
-                  },
-                ]}
-              />
+            <Image src='/globe.png'  width={250} height={250} alt="globe"/>
             </div>
             <div>
               <p className="grid-headtext">

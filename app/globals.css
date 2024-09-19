@@ -6,7 +6,28 @@
   scroll-behavior: smooth;
 }
 
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
 
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot , .cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 40;
+
+}
 
 .block-container {
   position: relative;
@@ -133,11 +154,11 @@
     }
   
     .btn-ping {
-      @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-300 opacity-75;
+      @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
     }
   
     .btn-ping_dot {
-      @apply relative inline-flex rounded-full h-3 w-3 bg-purple-400;
+      @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
     }
 
 
