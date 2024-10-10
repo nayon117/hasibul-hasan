@@ -26,11 +26,11 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <Image
-              src="/grid1.png"
-              alt="grid-1"
+              src="/profile.png"
+              alt="profile"
               width={300}
               height={300}
-              className="mx-auto h-fit w-full rounded-full object-contain sm:h-[276px]"
+              className="mx-auto h-fit w-full rounded-lg object-contain sm:h-[276px]"
             />
 
             <div>
