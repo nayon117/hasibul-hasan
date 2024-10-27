@@ -30,7 +30,7 @@ const About = () => {
               alt="profile"
               width={300}
               height={300}
-              className="mx-auto h-fit w-full rounded-lg object-contain sm:h-[276px]"
+              className="mx-auto h-fit w-1/2 rounded-lg object-contain sm:h-[276px]"
             />
 
             <div>
