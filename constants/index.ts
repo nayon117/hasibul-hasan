@@ -127,14 +127,13 @@ export const projects = [
   },
   {
     id: 10,
-    name: "Food Unity",
-    img: "/food.jpg",
+    name: "JSUtils",
+    img: "/jsutils.png",
     description:
-      "Food Unity is a platform aimed at connecting individuals or organizations with surplus food to those in need. The project focuses on reducing food waste and addressing hunger by providing a user-friendly interface to share and request food items.",
-    livelink: "https://food-unity-client.web.app/",
-    client: "https://github.com/nayon117/food-unity-client",
-    server: "https://github.com/nayon117/food-unity-server",
-    iconLists: ["react.svg", "tail.svg", "express.svg", "mongodb.svg"],
+      "Built a utility library website showcasing JavaScript methods and their usage, inspired by lodash. Leveraged AI tools for development while focusing on design, usability, and concept learning.",
+    livelink: "https://jsutils1.web.app/",
+    client: "https://github.com/nayon117/jsutils",
+    iconLists: ["react.svg", "tail.svg"],
   },
   {
     id: 11,
