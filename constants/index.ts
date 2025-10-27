@@ -106,17 +106,28 @@ export const projects = [
   },
   {
     id: 8,
-    name: "Automotive Gearup",
-    img: "/gearup.jpg",
+    name: "ParcelX",
+    img: "/parcel.jpg",
     description:
-      "Welcome to our automotive website, where you can explore a wide range of car brands, view car details, update car listings, and shop for your dream car.",
-    livelink: "https://automotive-gearup.web.app/",
-    client: "https://github.com/nayon117/automotive-gearup-client",
-    server: "https://github.com/nayon117/automotive-gearup-server",
+      "ParcelX — A smart door-to-door parcel delivery system built for speed, clarity, and control.",
+    livelink: "https://parcelx-9620e.web.app/",
+    client: "https://github.com/nayon117/parcelX_frontend",
+    server: "https://github.com/nayon117/parcelX_server",
     iconLists: ["react.svg", "tail.svg", "express.svg", "mongodb.svg"],
   },
   {
     id: 9,
+    name: "GadgetBD",
+    img: "/gadget.jpg",
+    description:
+      "GadgetBD is a modern e-commerce platform built using Next.js, TypeScript, and other cutting-edge technologies. The store offers a wide range of electronic gadgets, with features like product search, pagination, cart management, and a smooth checkout process.",
+    livelink: "https://gadgetbd.vercel.app/",
+    client: "https://github.com/nayon117/gadgetbd",
+    iconLists: ["next.svg", "tail.svg", "ts.svg", "mongodb.svg", "c.svg"],
+  },
+  
+  {
+    id: 10,
     name: "FitZen",
     img: "/fitzen.jpg",
     description:
@@ -126,7 +137,7 @@ export const projects = [
     iconLists: ["react.svg", "tail.svg"],
   },
   {
-    id: 10,
+    id: 11,
     name: "JSUtils",
     img: "/jsutils.png",
     description:
@@ -136,7 +147,7 @@ export const projects = [
     iconLists: ["react.svg", "tail.svg"],
   },
   {
-    id: 11,
+    id: 12,
     name: "DressU",
     img: "/dress.jpg",
     description:
@@ -147,7 +158,7 @@ export const projects = [
     iconLists: ["react.svg", "tail.svg", "express.svg", "mongodb.svg"],
   },
   {
-    id: 12,
+    id: 13,
     name: "EliteX",
     img: "/elite.jpg",
     description:
@@ -157,15 +168,17 @@ export const projects = [
     iconLists: ["react.svg", "tail.svg"],
   },
   {
-    id: 13,
-    name: "GadgetBD",
-    img: "/gadget.jpg",
+    id: 14,
+    name: "Automotive Gearup",
+    img: "/gearup.jpg",
     description:
-      "GadgetBD is a modern e-commerce platform built using Next.js, TypeScript, and other cutting-edge technologies. The store offers a wide range of electronic gadgets, with features like product search, pagination, cart management, and a smooth checkout process.",
-    livelink: "https://gadgetbd.vercel.app/",
-    client: "https://github.com/nayon117/gadgetbd",
-    iconLists: ["next.svg", "tail.svg", "ts.svg", "mongodb.svg", "c.svg"],
+      "Welcome to our automotive website, where you can explore a wide range of car brands, view car details, update car listings, and shop for your dream car.",
+    livelink: "https://automotive-gearup.web.app/",
+    client: "https://github.com/nayon117/automotive-gearup-client",
+    server: "https://github.com/nayon117/automotive-gearup-server",
+    iconLists: ["react.svg", "tail.svg", "express.svg", "mongodb.svg"],
   },
+  
 ];
 
 export const blogsArray = [

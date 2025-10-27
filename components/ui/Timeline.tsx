@@ -56,7 +56,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <motion.div
             key={index}
-            className="flex justify-start pt-10 md:gap-10 md:pt-40"
+            className="flex justify-start pt-10 md:gap-10 md:pt-32"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

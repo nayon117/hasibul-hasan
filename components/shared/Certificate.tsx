@@ -9,8 +9,8 @@ import { SparklesPreview } from "./SparkelComp";
 
 const Certificate = () => {
   return (
-    <section className="w-full py-20 px-5 sm:px-10">
-          <SparklesPreview title="Professional Certifications" />
+    <section className="mt-20 w-full px-5 sm:px-10">
+      <SparklesPreview title="Professional Certifications" />
       <div className="my-20 flex flex-col items-center justify-center gap-4 lg:flex-row">
         <Card
           title="Meta Frontend Developer"
@@ -122,9 +122,11 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      <Button name={order} isBeam containerClass="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-       
-      </Button>
+      <Button
+        name={order}
+        isBeam
+        containerClass="relative inline-flex h-12 overflow-hidden rounded-full p-px focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+      ></Button>
     </div>
   );
 };

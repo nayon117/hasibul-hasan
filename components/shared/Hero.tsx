@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   const textVariants = {
-    hidden: { x: -50, opacity: 0 },
+    hidden: { x: 50, opacity: 0 }, 
     visible: {
       x: 0,
       opacity: 1,
@@ -31,11 +31,12 @@ const Hero = () => {
 
   return (
     <motion.section
-      className="relative flex h-screen items-center overflow-hidden px-5 pt-16 sm:px-10"
+      className="relative flex h-screen items-center justify-end overflow-hidden px-5 pt-16 sm:px-10"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
     >
+      {/* Background video */}
       <div className="absolute inset-0 z-0">
         <video
           className="size-full object-cover"
@@ -44,15 +45,15 @@ const Hero = () => {
           muted
           playsInline
         >
-          <source
-            src="https://assets.mixkit.co/videos/49122/49122-720.mp4"
-            type="video/mp4"
-          />
+          <source src="video.mp4" type="video/mp4" />
         </video>
+        <div className="absolute inset-0 bg-black/50" />
       </div>
-      <div className="relative z-10 w-full max-w-2xl px-4 text-left text-white sm:px-6 lg:px-8">
+
+      {/* Text content on right */}
+      <div className="relative z-10 w-full max-w-2xl px-4 text-right text-white sm:px-6 lg:px-8">
         <motion.h1
-          className="mb-4 text-2xl font-bold md:text-3xl lg:whitespace-nowrap"
+          className="mb-4 text-xl font-bold md:text-2xl lg:text-3xl"
           variants={textVariants}
         >
           Designer, developer, and tech enthusiast
@@ -63,9 +64,9 @@ const Hero = () => {
         >
           creating exceptional web and digital experiences.
         </motion.p>
-        <a href="/Hasibul Hasan Nayon's Resume.pdf" download>
+        <a href="/Hasibul Hasan Resume.pdf" download>
           <motion.button
-            className="inline-flex items-center rounded-md bg-green-700 px-6 py-3 font-bold text-white transition duration-300 ease-in-out hover:bg-green-800"
+            className="inline-flex items-center rounded-md border-2 border-white px-4 py-2 font-bold text-white transition duration-300 ease-in-out"
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"

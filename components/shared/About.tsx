@@ -19,17 +19,17 @@ const About = () => {
   };
 
   return (
-    <section className="my-20 px-5 sm:px-10" id="about">
+    <section className="mt-20 px-5 sm:px-10" id="about">
 
 
       <div className="grid h-full grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-6">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <Image
-              src="/profile.png"
+              src="/photo.png"
               alt="profile"
-              width={300}
-              height={300}
+              width={100}
+              height={100}
               className="mx-auto h-fit w-1/2 rounded-lg object-contain sm:h-[276px]"
             />
 
@@ -52,7 +52,7 @@ const About = () => {
                   height={40}
                   src={skill.imageUrl}
                   alt={skill.name}
-                  className=" mt-16 object-contain " // Add class for styling
+                  className=" mt-16 object-contain " 
                 />
               ))}
             </div>
@@ -92,9 +92,11 @@ const About = () => {
 
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
-            <img
+            <Image
               src="/grid3.png"
               alt="grid-3"
+              width={150}
+              height={150}
               className="h-fit w-full object-contain sm:h-[266px]"
             />
 

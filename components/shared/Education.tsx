@@ -4,10 +4,10 @@ import { Timeline } from "../ui/Timeline";
 export function Education() {
   const data = [
     {
-      title: "2021-current",
+      title: "2021-2024",
       cardTitle: "B.Sc. in Statistics",
       cardSubtitle: "Khulna BL College",
-      cardDetailedText: "Pursuing advanced statistical methods and theories with a strong GPA of 3.20. Collaborating on research projects and applying statistical techniques to real-world problems.",
+      cardDetailedText: "Pursued advanced statistical methods and theories before leaving the program to focus on software development and building practical projects.",
     },
     {
       title: "2018-2020",
